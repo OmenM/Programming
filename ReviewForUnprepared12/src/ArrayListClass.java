@@ -6,7 +6,7 @@ public class ArrayListClass {
         private int userChoice;
         Scanner scanner = new Scanner(System.in);
         //Messages
-        private final String GREETMESSAGE = "sad";
+        private final String GREETMESSAGE = "Array List Class Options\n1. ";
         private final String IFSTATEMENTS = "";
         private final String IFSTATEMENTSEXAMPLE = "";
 
