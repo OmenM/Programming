@@ -7,7 +7,7 @@ public class DataTypes {
     //Messages
     private final String GREETMESSAGE = "asdf";
     private final String DATATYPES = "asdf";
-    private final String PRIMITIVES = "asdf";
+    private final String PRIMITIVES = "There are 8 primitives in Java\n boolean\n byte\n char\n short\n int\n long\n float\ndouble.";
 
     public DataTypes() {
         dataTypesStart();
@@ -22,18 +22,18 @@ public class DataTypes {
                     stayInData = false;
                     break;
                 case 1:
-                    printIfMessages();
+                    printDataTypes();
                     break;
                 case 2:
-                    System.out.println("");
+                    System.out.println("asdf");
                     break;
 
             }
         }
     }
 
-    private void printIfMessages(){
-        System.out.println();
+    private void printDataTypes(){
+        System.out.println(PRIMITIVES);
         System.out.println();
     }
 
