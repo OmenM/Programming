@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
+
 public class DataTypes {
     private boolean stayInData = true;
     private int userChoice;
     Scanner scanner = new Scanner(System.in);
     //Messages
     private final String GREETMESSAGE = "";
-    private final String IFSTATEMENTS = "";
-    private final String IFSTATEMENTSEXAMPLE = "";
+    private final String PRIMITIVETYPES = "There are 8 primitive types in Java : boolean, byte, char, short, int, long, float and double.";
+    private final String PRIMITIVEOPERATORS = "";
 
     public DataTypes () {dataTypesStart(); }
 
@@ -20,16 +21,16 @@ public class DataTypes {
                     stayInData = false;
                     break;
                 case 1:
-                    printIfMessages();
+                    printPrimitiveTypes();
                 case 2:
-                    System.out.println("Data");
+
             }
         }
     }
 
-    private void printIfMessages(){
-        System.out.println(IFSTATEMENTS);
-        System.out.println(IFSTATEMENTSEXAMPLE);
+    private void printPrimitiveTypes(){
+        System.out.println(PRIMITIVETYPES);
+
     }
 
 
