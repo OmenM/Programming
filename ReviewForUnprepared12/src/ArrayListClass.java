@@ -15,10 +15,10 @@ public class ArrayListClass {
 
 
         public ArrayListClass() {
-            controlFlowStart();
+            arrayListStart();
         }
 
-        private void controlFlowStart(){
+        private void arrayListStart(){
             while(stayArrayList){
                 System.out.println(GREETMESSAGE);
                 userChoice = scanner.nextInt();
@@ -28,8 +28,10 @@ public class ArrayListClass {
                         break;
                     case 1:
                         printArrayListDo();
+                        break;
                     case 2:
                         printInstantiate();
+                        break;
                 }
             }
         }

@@ -1,4 +1,3 @@
-import javax.xml.crypto.Data;
 import java.util.Scanner;
 
 public class MainMenu {
@@ -20,7 +19,7 @@ public class MainMenu {
                 cont = false;
                 break;
             case 1:
-                ControlFlow controlFlow = new ControlFlow();
+                DataTypes controlFlow = new DataTypes();
                 break;
             case 2:
                 DataTypes dataTypes = new DataTypes();
