@@ -5,9 +5,9 @@ public class DataTypes {
     private int userChoice;
     Scanner scanner = new Scanner(System.in);
     //Messages
-    private final String GREETMESSAGE = "asdf";
+    private final String GREETMESSAGE = "Data Types Options: ";
     private final String DATATYPES = "asdf";
-    private final String PRIMITIVES = "There are 8 primitives in Java\n boolean\n byte\n char\n short\n int\n long\n float\ndouble.";
+    private final String PRIMITIVES = "There are 8 primitives in Java\n boolean ; byte\n char ; short\n int ; long\n float ; double";
 
     public DataTypes() {
         dataTypesStart();
@@ -15,7 +15,7 @@ public class DataTypes {
 
     private void dataTypesStart(){
         while(stayInData){
-            System.out.println();
+            System.out.println(GREETMESSAGE);
             userChoice = scanner.nextInt();
             switch(userChoice){
                 case 0:
