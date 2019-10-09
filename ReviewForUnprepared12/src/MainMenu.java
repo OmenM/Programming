@@ -19,7 +19,7 @@ public class MainMenu {
                 cont = false;
                 break;
             case 1:
-                DataTypes controlFlow = new DataTypes();
+                ControlFlow controlFlow = new ControlFlow();
                 break;
             case 2:
                 DataTypes dataTypes = new DataTypes();
