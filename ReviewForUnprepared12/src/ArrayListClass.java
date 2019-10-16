@@ -11,6 +11,7 @@ public class ArrayListClass {
         private final String ARRAYLISTDO = "ArrayLists create a list of inserted elements but cannot be used with primitives such as 'int, char etc.' ";
         private final String INSTANTIATE = "Here's how to instantiate an ArrayList";
         private final String ARRAYLISTEXAMPLE = "ArrayList<String> ex = new ArrayList<>();\n ex.add('1');\n ex.add('2');\n ex.add('3');";
+        private final String METHODS = "There are 4 basic methods included in the ArrayList Class. \n int \n boolean\n void\n Object";
 
 
 
@@ -32,6 +33,8 @@ public class ArrayListClass {
                     case 2:
                         printInstantiate();
                         break;
+                    case 3 :
+                        printMethods();
                 }
             }
         }
@@ -44,6 +47,10 @@ public class ArrayListClass {
         private void printInstantiate(){
             System.out.println(INSTANTIATE);
             System.out.println(ARRAYLISTEXAMPLE);
+
+        }
+        private void printMethods(){
+            System.out.println(METHODS);
 
         }
 
