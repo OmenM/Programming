@@ -43,4 +43,9 @@ public class Moon {
     public Planet getPlanet() {
         return Planet;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

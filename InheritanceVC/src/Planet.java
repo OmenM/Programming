@@ -34,11 +34,13 @@ public class Planet {
         this.designation = designation;
     }
 
-    public void addMoon(ArrayList<Moon> moon) {
-        this.Moon = moon;
+    public void setMoon(ArrayList<Moon> moon) {
+        Moon = moon;
     }
 
-    public ArrayList<Moon> getMoon() {
-        return Moon;
+    @Override
+    public String toString() {
+        return super.toString();
     }
+
 }

@@ -5,6 +5,7 @@ public class GasPlanet extends Planet{
     private Color color ;
 
     GasPlanet(int orbitTime, String designation, boolean hasRings,Color color){
+        super(orbitTime, designation);
         this.hasRings = hasRings;
         this.color = color;
     }
@@ -25,7 +26,8 @@ public class GasPlanet extends Planet{
         this.color = color;
     }
 
-    public String toString(){
-        return "Planet";
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
