@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Planet {
     private int orbitTime = 0;
@@ -36,6 +37,21 @@ public class Planet {
 
     public void setMoon(ArrayList<Moon> moon) {
         Moon = moon;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Planet planet = (Planet) o;
+        return orbitTime == planet.orbitTime &&
+                Moon.equals(planet.Moon) &&
+                designation.equals(planet.designation);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(orbitTime, Moon, designation);
     }
 
     @Override
