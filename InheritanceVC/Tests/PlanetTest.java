@@ -1,7 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class PlanetTest{
     Planet planetTest;
@@ -18,7 +19,12 @@ public class PlanetTest{
     }
 
     @Test
-    public void EqualsTest() {
-        assertEquals(true,true);
+    public void EqualsTestTrue() {
+        assertTrue(planetTest.equals(planetTest2));
     }
+    @Test
+    public void EqualsTestFalse(){
+        assertFalse(planetTest.equals(planetTestbad));
+    }
+
 }
