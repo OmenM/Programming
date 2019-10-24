@@ -1,18 +1,26 @@
-public class X {
-    void method(int a){
-        System.out.println("ONE");
-    }
-    void method(double d){
-        System.out.println("TWO");
+class X
+{
+    void calculate(int a, int b)
+    {
+        System.out.println("CLASS X");
     }
 
 }
 class Y extends X
 {
+   @Override
+    void calculate(int a, int b)
+   {
+       System.out.println("CLASS Y");
+   }
+}
+class Z extends Y
+{
     @Override
-    void method(double d)
+    void calculate(int a, int b)
     {
-        System.out.println("THREE");
+        System.out.println("CLASS Z");
     }
+
 }
 
