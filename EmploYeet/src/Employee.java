@@ -1,4 +1,4 @@
-public class Employee {
+public abstract class Employee {
     public String name;
     public int hireYear;
 
@@ -19,12 +19,9 @@ public class Employee {
         return hireYear;
     }
 
-    public double annualSalary(){
-        return 12;
-    }
-    public double monthlySalary(){
-        return 72;
-    }
+    abstract double annualSalary();
+
+    abstract double monthlySalary();
 
     @Override
     public String toString() {

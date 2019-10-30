@@ -1,4 +1,4 @@
-public class HourlyEmployee extends Employee{
+public abstract class HourlyEmployee extends Employee{
     double hoursPerWeek;
     double hourlyWage;
     boolean hasBenefits;
