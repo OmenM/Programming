@@ -23,9 +23,9 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<Employee> employees = new ArrayList<>();
-        employees.add(new SalaryEmployee("Bob", 1824, 86));
-        employees.add(new PartTime("Kyle", 485, 56.2, 56.2));
-        employees.add(new FullTime("Bile", 4985, 56.2, 56.2));
+        employees.add(new SalaryEmployee("Johnny", 1996, 67000));
+        employees.add(new PartTime("John", 1998, 12000, 1000));
+        employees.add(new FullTime("K", 2012, 40, 16.95));
         System.out.println(getHourlyEmployees(employees));
     }
 }
