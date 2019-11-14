@@ -9,8 +9,8 @@ import java.util.ArrayList;
 
 public class mainthing {
     private String name;
-    private ArrayList<Customer> ppl = new ArrayList<>();
-    private ArrayList<Order> ordds = new ArrayList<>();
+    private ArrayList<Customer> customers = new ArrayList<>();
+    private ArrayList<Order> orders = new ArrayList<>();
     private ArrayList<items> invent = new ArrayList<>();
 
     public mainthing(String name){
