@@ -3,7 +3,7 @@ package Model;
 public class pasta extends items{
     boolean isDelux;
 
-    pasta(String name, double price, boolean delux){
+    public pasta(String name, double price, boolean delux){
         super(name, price);
         isDelux = delux;
     }

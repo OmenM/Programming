@@ -3,7 +3,7 @@ package Tools;
 import Model.items;
 import Model.pasta;
 import Model.pizza;
-import Model.sand;
+import Model.sandwich;
 
 import java.util.ArrayList;
 
@@ -11,28 +11,29 @@ public class mainthing {
     private String name;
     private ArrayList<Customer> customers = new ArrayList<>();
     private ArrayList<Order> orders = new ArrayList<>();
-    private ArrayList<items> invent = new ArrayList<>();
+    private ArrayList<items> inventory = new ArrayList<>();
 
-    public mainthing(String name){
+    public mainthing(String name, double howMuch, boolean delux, sandwich.Size size){
         this.name = name;
-        startStuff();
+        startStuff(howMuch, delux, size);
     }
 
-    public void startStuff(){
+    public void startStuff(double howMuch, boolean delux, sandwich.Size size){
         for(int i = 0 ; i< 5;i++){
-            makePizza();
-            makePasta();
-            makesand();
+            makePizza(howMuch);
+            makePasta(howMuch, delux);
+            makesand(size);
         }
     }
 
-    private void makePizza() {
-        invent.add(new pizza());
+    private void makePizza(double howMuch) {
+        inventory.add(new pizza(name, howMuch));
     }
-    private void makePasta(){
-        invent.add(new pasta());
+    private void makePasta(double howMuch, boolean delux){
+        inventory.add(new pasta(name, howMuch, delux));
     }
-    private void makesand(){
-        invent.add(new sand());
+    private void makesand(sandwich.Size size){
+        inventory.add(new sandwich(name, size));
     }
+
 }

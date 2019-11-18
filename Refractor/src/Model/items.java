@@ -9,6 +9,7 @@ public abstract class items{
         this.howMuch = howMuch;
     }
 
+
     public String getName() {
         return name;
     }
