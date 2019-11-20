@@ -5,5 +5,6 @@ public class Customer {
     Address address;
 
     private class Address {
+        Customer customer = new Customer();
     }
 }

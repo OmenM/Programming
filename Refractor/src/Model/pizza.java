@@ -12,11 +12,17 @@ public class pizza extends items {
     }
 
     @Override
-    public double getHowMuch() {
-        if (isDelux) {
-            return 2;
-        }
-        return 0;
-    }
     //if delux add 3 bucks
+    public double getHowMuch() {
+        double price = getHowMuch();
+        if (isDelux) {
+            setName("Pastaaa");
+            return price +3;
+        }
+        else{
+            setName("Pasta");
+            return price ;
+        }
+    }
+
 }
