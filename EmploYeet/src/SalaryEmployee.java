@@ -7,6 +7,10 @@ public class SalaryEmployee extends Employee{
         this.annualSalary = annualSalary;
     }
 
+    public SalaryEmployee(String name, int hireYear, int annualSalary) {
+
+    }
+
     public boolean isHasBenefits() {
         return hasBenefits;
     }
