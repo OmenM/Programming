@@ -2,5 +2,12 @@ package Tools;
 
 public class Customer {
     String name;
-    Address address;
+    private Order order;
+
+    public Customer(String name, Order order) {
+        this.name = name;
+        this.order = order;
+
+
+    }
 }

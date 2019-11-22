@@ -1,10 +1,12 @@
 package UI;
 
-import Tools.mainthing;
+import Tools.TakeOrder;
 
 public class Main {
+
     public static void main(String[] args) {
-        //mainthing main = new mainthing();
+        TakeOrder main = new TakeOrder("Kyle");
+
         //Try sample orders
 
     }

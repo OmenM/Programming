@@ -3,16 +3,22 @@ package Model;
 public class Pasta extends Food {
     String name;
     double price;
-    boolean isDelux;
+    boolean isDeluxe;
 
-    Pasta(String name, double price, boolean delux){
+    public Pasta(String name, double price, boolean deluxe){
         super("Pasta", 3);
-        isDelux = delux;
     }
 
     @Override
-    public double getHowMuch() {
+    public double getPrice() {
         //if delux add 2 bucks
-        return 0;
+        if(isDeluxe){
+            setName("Deluxe Pasta");
+            return price + 2;
+        }
+        else{
+            setName("Pasta");
+            return price;
+        }
     }
 }

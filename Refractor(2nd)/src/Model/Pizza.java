@@ -11,7 +11,8 @@ public class Pizza extends Food {
     }
 
     @Override
-    public double getHowMuch() {
+    public double getPrice() {
+        //if delux add 3 bucks
         if(isDeluxe){
             setName("Deluxe Pizza");
             return price + 3;
@@ -21,5 +22,5 @@ public class Pizza extends Food {
             return price;
         }
     }
-    //if delux add 3 bucks
+
 }

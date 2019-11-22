@@ -2,11 +2,11 @@ package Model;
 
 public abstract class Food {
     private String name;
-    private double howMuch;
+    private double Price;
 
-    public Food(String name, double howMuch) {
+    public Food(String name, double price) {
         this.name = name;
-        this.howMuch = howMuch;
+        this.Price = price;
     }
 
     public String getName() {
@@ -17,6 +17,6 @@ public abstract class Food {
         this.name = name;
     }
 
-    public abstract double getHowMuch();
+    public abstract double getPrice();
 
 }
