@@ -1,11 +1,11 @@
 package UI;
 
-import Tools.TakeOrder;
+import Tools.Cook;
 
 public class Main {
 
     public static void main(String[] args) {
-        TakeOrder main = new TakeOrder("Kyle");
+        Cook cafe = new Cook("Kyle");
 
         //Try sample orders
 

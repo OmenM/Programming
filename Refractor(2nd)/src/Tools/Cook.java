@@ -7,13 +7,13 @@ import Model.Sandwich;
 
 import java.util.ArrayList;
 
-public class TakeOrder {
+public class Cook {
     private String name;
     private ArrayList<Customer> customers = new ArrayList<>();
     private ArrayList<Order> orders = new ArrayList<>();
     private ArrayList<Food> inventory = new ArrayList<>();
 
-    public TakeOrder(String name){
+    public Cook(String name){
         this.name = name;
         startStuff();
     }
