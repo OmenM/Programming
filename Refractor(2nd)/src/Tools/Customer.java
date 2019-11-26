@@ -9,8 +9,11 @@ public class Customer {
 
     public Customer(String name, Order order) {
         this.name = name;
-        this.order = order;
-
-
+        time = new Time();
     }
+
+    Order getOrder(){
+        return order;
+    }
+
 }

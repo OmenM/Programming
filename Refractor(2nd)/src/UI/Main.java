@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Cook cafe = new Cook("Kyle");
 
-        cafe.newCustomer(new Customer,);
+        cafe.newCustomer(new Customer, new Pasta());
         //Try sample orders
 
     }

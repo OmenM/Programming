@@ -36,7 +36,20 @@ public class Cook {
         inventory.add(new Sandwich("Sandwich",6.5,true));
     }
 
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
+
+    public ArrayList<Order> getOrders() {
+        return orders;
+    }
+
+    public ArrayList<Food> getInventory() {
+        return inventory;
+    }
+
     public void newCustomer(Customer customer) {
             customers.add(customer);
     }
+
 }

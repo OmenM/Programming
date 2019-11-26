@@ -12,7 +12,7 @@ public class Pizza extends Food {
 
     @Override
     public double getPrice() {
-        //if delux add 3 bucks
+        //if deluxe add 3 bucks
         if(isDeluxe){
             setName("Deluxe Pizza");
             return price + 3;
