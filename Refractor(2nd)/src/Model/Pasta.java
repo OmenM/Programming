@@ -7,18 +7,20 @@ public class Pasta extends Food {
 
     public Pasta(String name, double price, boolean deluxe){
         super("Pasta", 3);
+        isDeluxe = deluxe;
+        if (isDeluxe){
+        setName("Deluxe Pasta");
+        }
     }
 
     @Override
     public double getPrice() {
-        //if delux add 2 bucks
-        if(isDeluxe){
-            setName("Deluxe Pasta");
-            return price + 2;
+        //if deluxe add 2 bucks
+        if (isDeluxe) {
+                return price + 2;
         }
-        else{
-            setName("Pasta");
+        else {
             return price;
+            }
         }
     }
-}

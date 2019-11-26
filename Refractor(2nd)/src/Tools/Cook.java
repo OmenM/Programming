@@ -15,10 +15,10 @@ public class Cook {
 
     public Cook(String name){
         this.name = name;
-        startStuff();
+        makeFood();
     }
 
-    public void startStuff(){
+    public void makeFood(){
         for(int i = 0 ; i< 5;i++){
             makePizza();
             makePasta();
@@ -34,5 +34,9 @@ public class Cook {
     }
     private void makeSandwich(){
         inventory.add(new Sandwich("Sandwich",6.5,true));
+    }
+
+    public void newCustomer(Customer customer) {
+            customers.add(customer);
     }
 }
