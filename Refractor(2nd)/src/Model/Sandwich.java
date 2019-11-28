@@ -3,21 +3,22 @@ package Model;
 
 public class Sandwich extends Food {
     String name;
-    double price;
+    double Price;
     boolean SMALL, MEDIUM, LARGE;
 
     public enum Size{
         SMALL(6.5), MEDIUM(8.0), LARGE(10.5);
         public String name;
-        private double price;
+        private double Price;
 
-        Size(double d){price = price;}
+        Size(double d){
+            Price = Price;}
         double getPrice() {
-            return price;
+            return Price;
         }
     }
 
-   public Sandwich(String name, double price, boolean size){
+   public Sandwich(String name, double Price, boolean size){
        super("Sandwich",6.5);
 
    }
@@ -25,15 +26,15 @@ public class Sandwich extends Food {
     public double getPrice() {
         if(SMALL){
             setName("Small Sandwich");
-            return price;
+            return Price;
         }
         else if(MEDIUM){
             setName("Medium Sandwich");
-            return price + 1.5;
+            return Price + 1.5;
         }
         else if(LARGE) {
             setName("Large Sandwich");
-            return price + 4;
+            return Price + 4;
         }
         return 0;
     }

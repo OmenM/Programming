@@ -1,6 +1,7 @@
 package Tools;
 
 import Model.Food;
+import Model.Pizza;
 import Tools.Time.Time;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ public class Order {
     boolean out;
     boolean complete;
 
-    Order(ArrayList<Food> items, Time start){
+    public Order(ArrayList<Food> items, Time start){
         //if not in inventory add 10 minutes to order
         Order = items;
         this.start = start;
@@ -25,6 +26,24 @@ public class Order {
     }
 
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "Order=" + Order +
+                ", start=" + start +
+                ", end=" + end +
+                ", out=" + out +
+                ", complete=" + complete +
+                '}';
+    }
+
+    public ArrayList<Food> getOrder() {
+        return Order;
+    }
+
+    public void setOrder(ArrayList<Food> order) {
+        Order = order;
+    }
 
     public void InProgress(){
         out = true;

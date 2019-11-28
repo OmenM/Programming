@@ -2,10 +2,9 @@ package Model;
 
 public class Pasta extends Food {
     String name;
-    double price;
     boolean isDeluxe;
 
-    public Pasta(String name, double price, boolean deluxe){
+    public Pasta(String name, double Price, boolean deluxe){
         super("Pasta", 3);
         isDeluxe = deluxe;
         if (isDeluxe){
@@ -17,10 +16,10 @@ public class Pasta extends Food {
     public double getPrice() {
         //if deluxe add 2 bucks
         if (isDeluxe) {
-                return price + 2;
+                return Price + 2;
         }
         else {
-            return price;
+            return Price;
             }
         }
     }

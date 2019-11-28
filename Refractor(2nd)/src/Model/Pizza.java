@@ -6,8 +6,9 @@ public class Pizza extends Food {
     double price;
     boolean isDeluxe;
 
-    public Pizza(String name, double price, boolean isDeluxe) {
+    public Pizza(String name, double price, boolean deluxe) {
         super("Pizza", 5);
+        isDeluxe = deluxe;
     }
 
     @Override
