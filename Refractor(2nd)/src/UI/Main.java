@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
         //Try sample orders
         Cook cook = new Cook ("Cook");
-        cook.newCustomer(new Customer("Ver",new Order(new Pizza("Ver",5,true))));
+        cook.newCustomer(new Customer("Ver",new Sandwich("Pizza",5, Sandwich.Size.SMALL),new Time()));
         System.out.println();
 
     }

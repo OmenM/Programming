@@ -33,7 +33,7 @@ public class Cook {
         inventory.add(new Pasta("Pasta",3,false));
     }
     private void makeSandwich(){
-        inventory.add(new Sandwich("Sandwich",6.5,true));
+        inventory.add(new Sandwich("Sandwich",4.5, Sandwich.Size.SMALL));
     }
 
     public ArrayList<Customer> getCustomers() {

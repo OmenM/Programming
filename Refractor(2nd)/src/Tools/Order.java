@@ -13,9 +13,9 @@ public class Order {
     boolean out;
     boolean complete;
 
-    public Order(ArrayList<Food> items, Time start){
+    public Order(ArrayList<Food> order, Time start){
         //if not in inventory add 10 minutes to order
-        Order = items;
+        Order = order;
         this.start = start;
         end = new Time(start);
         for(int i = 0; i < 20;i++){

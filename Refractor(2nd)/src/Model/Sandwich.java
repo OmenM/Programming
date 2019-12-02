@@ -18,7 +18,7 @@ public class Sandwich extends Food {
         }
     }
 
-   public Sandwich(String name, double Price, boolean size){
+   public Sandwich(String name, double Price, Size size){
        super("Sandwich",6.5);
 
    }

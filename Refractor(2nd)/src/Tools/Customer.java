@@ -1,6 +1,9 @@
 package Tools;
 
+import Model.Food;
 import Tools.Time.Time;
+
+import java.util.ArrayList;
 
 public class Customer {
     String name;
@@ -9,11 +12,8 @@ public class Customer {
 
     public Customer(String name, Order order, Time time) {
         this.name = name;
+        ArrayList<Food> Order = new ArrayList<>();
         this.order = order;
-        this.time = time;
-    }
-
-    public Customer(String ver, Order ver1) {
     }
 
     Order getOrder(Order order){
